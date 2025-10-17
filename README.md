@@ -63,9 +63,9 @@ To view the complete end-to-end pipeline (data analysis → model training → e
 jupyter notebook notebooks/Predicting BTS Power Consumption.ipynb
 ```
 This notebook:
-- ** Performs data preprocessing and feature engineering.
-- ** Runs multi-model GridSearchCV for hyperparameter optimization.
-- ** Conducts error analysisSaves the trained model automatically in the models/ directory.
+- Performs data preprocessing and feature engineering.
+- Runs multi-model GridSearchCV for hyperparameter optimization.
+- Conducts error analysisSaves the trained model automatically in the models/ directory.
 
 ### ⚡ Option 2: Use the Pre-Trained Model for Predictions
 If you prefer instant predictions, use the pre-trained model:Example Python Script
@@ -109,4 +109,29 @@ R² (Coefficient of Determination)    0.9892                  Indicates an extre
 Mean Absolute Error (MAE)            ≈ 79                    WattsAverage prediction error
 Custom Accuracy (±10%)               84%                     84% of predictions fall within tolerance range
 
-🔍 Key Insight: Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data                                                                  distribution challenge.🧩 Project Highlights✅ Multi-model evaluation using GridSearchCV✅ Robust data                                                                     preprocessing and feature engineering pipeline✅ Supports scalable model deployment✅ Designed for real-world telecom energy optimization🌐 Future ScopeIntegrate real-time data streams for live power forecastingIncorporate weather and temperature variables for greater accuracyDeploy as a REST API or cloud-based monitoring dashboard🏁 ConclusionThis project demonstrates how AI-driven predictive modeling can revolutionize telecom infrastructure management by reducing operational costs, improving sustainability, and enabling data-driven decision-making.Predict. Optimize. Sustain.👨‍💻 Developed by Team AI_KONJeyadev K | Amrutha A G | Abhishek Reddy | Vansham Aggarwal
+🔍** Key Insight:** Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.
+***
+
+## 🧩 Project Highlights
+- ✅ Multi-model evaluation using GridSearchCV
+- ✅ Robust data preprocessing and feature engineering pipeline
+- ✅ Supports scalable model deployment
+- ✅ Designed for real-world telecom energy optimization
+
+***
+## 🌐 Future Scope
+- Integrate real-time data streams for live power forecasting
+- Incorporate weather and temperature variables for greater accuracy
+- Deploy as a REST API or cloud-based monitoring dashboard
+***
+
+## 🏁 Conclusion
+
+This project demonstrates how AI-driven predictive modeling can revolutionize telecom infrastructure management by reducing operational costs, improving sustainability, and enabling data-driven decision-making.
+
+_Predict. Optimize. Sustain._
+
+***
+### 👨‍💻 Developed by 
+Team AI_KON
+Jeyadev K | Amrutha A G | Abhishek Reddy | Vansham Aggarwal
