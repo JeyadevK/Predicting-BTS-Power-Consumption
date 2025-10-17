@@ -110,7 +110,7 @@ The champion model, selected using GridSearchCV, demonstrates excellent predicti
 | Mean Absolute Error (MAE) | ≈ 79 | WattsAverage prediction error |
 | Custom Accuracy (±10%) | 84% | 84% of predictions fall within tolerance range |
 
-🔍__Key Insight:__ Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.
+🔍Key Insight: Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.
 ***
 
 ## 🧩 Project Highlights
