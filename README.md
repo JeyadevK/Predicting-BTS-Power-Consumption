@@ -40,7 +40,7 @@ Follow these steps to set up the project locally:
 git clone [Your-GitLab-Repo-URL]
 cd bts-power-prediction
 
-**### 2️⃣ Create a Virtual Environment (Recommended)**
+### 2️⃣ Create a Virtual Environment (Recommended)**
 ```bash
 python -m venv venv
 source venv/bin/activate
