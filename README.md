@@ -38,7 +38,7 @@ Follow these steps to set up the project locally:
 ### 1️⃣ Clone the Repository
 ```bash
 git clone [Your-GitLab-Repo-URL]
-cd bts-power-prediction
+cd AI_KON
 ```
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
