@@ -1,7 +1,5 @@
 # ⚡ Predictive Power Modeling for Telecom Base Stations
 
-**Team:** AI_KON  
-**Members:** Jeyadev K, Amrutha A G, Abhishek Reddy, Vansham Aggarwal  
 
 ***
 
@@ -38,7 +36,7 @@ Follow these steps to set up the project locally:
 ### 1️⃣ Clone the Repository
 ```bash
 git clone [Your-GitLab-Repo-URL]
-cd AI_KON
+cd Predicting-BTS-Power-Consumption
 ```
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
@@ -133,5 +131,4 @@ This project demonstrates how AI-driven predictive modeling can revolutionize te
 _Predict. Optimize. Sustain._
 
 ***
-### 👨‍💻 Developed by Team AI_KON
-Jeyadev K | Amrutha A G | Abhishek Reddy | Vansham Aggarwal
+### 👨‍💻 Developed by Team Jeyadev K 
