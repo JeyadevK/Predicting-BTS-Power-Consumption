@@ -54,11 +54,20 @@ pip install -r requirements.txt
 
 ***
 
-🚀 How to Use the Project
+## 🚀 How to Use the Project
 
 You can use the project in two ways — by training the model yourself or using the pre-trained version.
-#### 🧠 Option 1: Run the Full Training NotebookTo view the complete end-to-end pipeline (data analysis → model training → evaluation):Bashjupyter notebook notebooks/Predicting BTS Power Consumption.ipynb
-This notebook:Performs data preprocessing and feature engineeringRuns multi-model GridSearchCV for hyperparameter optimizationConducts error analysisSaves the trained model automatically in the models/ directory⚡ Option 2: Use the Pre-Trained Model for PredictionsIf you prefer instant predictions, use the pre-trained model:Example Python Script
+### 🧠 Option 1: Run the Full Training Notebook
+To view the complete end-to-end pipeline (data analysis → model training → evaluation):
+```bash
+jupyter notebook notebooks/Predicting BTS Power Consumption.ipynb
+```
+This notebook:
+--> Performs data preprocessing and feature engineering
+--> Runs multi-model GridSearchCV for hyperparameter optimization
+--> Conducts error analysisSaves the trained model automatically in the models/ directory
+
+### ⚡ Option 2: Use the Pre-Trained Model for PredictionsIf you prefer instant predictions, use the pre-trained model:Example Python Script
 
 ```python
 import joblib
@@ -86,4 +95,9 @@ input_df['Total_Traffic'] = input_df['Downlink'] + input_df['Uplink']
 predicted_power = loaded_model.predict(input_df)
 
 print(f"Predicted Average Power Consumption: {predicted_power[0]:.2f} Watts")
+
+```
+
+***
+
 📊 Model PerformanceThe champion model, selected using GridSearchCV, demonstrates excellent predictive accuracy and strong generalization.MetricScoreDescriptionR² (Coefficient of Determination)0.9892Indicates an extremely strong statistical fitMean Absolute Error (MAE)≈ 79 WattsAverage prediction errorCustom Accuracy (±10%)84%84% of predictions fall within tolerance range🔍 Key Insight: Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.🧩 Project Highlights✅ Multi-model evaluation using GridSearchCV✅ Robust data preprocessing and feature engineering pipeline✅ Supports scalable model deployment✅ Designed for real-world telecom energy optimization🌐 Future ScopeIntegrate real-time data streams for live power forecastingIncorporate weather and temperature variables for greater accuracyDeploy as a REST API or cloud-based monitoring dashboard🏁 ConclusionThis project demonstrates how AI-driven predictive modeling can revolutionize telecom infrastructure management by reducing operational costs, improving sustainability, and enabling data-driven decision-making.Predict. Optimize. Sustain.👨‍💻 Developed by Team AI_KONJeyadev K | Amrutha A G | Abhishek Reddy | Vansham Aggarwal
