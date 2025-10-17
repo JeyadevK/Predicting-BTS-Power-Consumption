@@ -104,12 +104,13 @@ print(f"Predicted Average Power Consumption: {predicted_power[0]:.2f} Watts")
 ## 📊 Model Performance
 The champion model, selected using GridSearchCV, demonstrates excellent predictive accuracy and strong generalization.
 
-Metric                               Score                     Description
-R² (Coefficient of Determination)    0.9892                  Indicates an extremely strong statistical fit
-Mean Absolute Error (MAE)            ≈ 79                    WattsAverage prediction error
-Custom Accuracy (±10%)               84%                     84% of predictions fall within tolerance range
+| Metric | Score | Description |
+| :--- | :--- | :--- |
+| R² (Coefficient of Determination) | 0.9892 | Indicates an extremely strong statistical fit |
+| Mean Absolute Error (MAE) | ≈ 79 | WattsAverage prediction error |
+| Custom Accuracy (±10%) | 84% | 84% of predictions fall within tolerance range |
 
-🔍** Key Insight:** Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.
+🔍__Key Insight:__ Error analysis revealed that larger deviations occur primarily with 5G sites, suggesting the need for more 5G-specific data — not a model flaw, but a data distribution challenge.
 ***
 
 ## 🧩 Project Highlights
@@ -132,6 +133,5 @@ This project demonstrates how AI-driven predictive modeling can revolutionize te
 _Predict. Optimize. Sustain._
 
 ***
-### 👨‍💻 Developed by 
-Team AI_KON
+### 👨‍💻 Developed by Team AI_KON
 Jeyadev K | Amrutha A G | Abhishek Reddy | Vansham Aggarwal
