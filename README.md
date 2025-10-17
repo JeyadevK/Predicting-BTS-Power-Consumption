@@ -39,15 +39,29 @@ Follow these steps to set up the project locally:
 ```bash
 git clone [Your-GitLab-Repo-URL]
 cd bts-power-prediction
+```
 
-2️⃣ **Create a Virtual Environment (Recommended)
+### 2️⃣ Create a Virtual Environment (Recommended)
 ```bash
 python -m venv venv
-source venv/bin/activate
-# On Windows, use: venv\Scripts\activate
-3️⃣ Install DependenciesBashpip install -r requirements.txt
-🚀 How to Use the ProjectYou can use the project in two ways — by training the model yourself or using the pre-trained version.🧠 Option 1: Run the Full Training NotebookTo view the complete end-to-end pipeline (data analysis → model training → evaluation):Bashjupyter notebook notebooks/Predicting BTS Power Consumption.ipynb
-This notebook:Performs data preprocessing and feature engineeringRuns multi-model GridSearchCV for hyperparameter optimizationConducts error analysisSaves the trained model automatically in the models/ directory⚡ Option 2: Use the Pre-Trained Model for PredictionsIf you prefer instant predictions, use the pre-trained model:Example Python ScriptPythonimport joblib
+source venv/bin/activate # On Windows, use: venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+***
+
+🚀 How to Use the Project
+
+You can use the project in two ways — by training the model yourself or using the pre-trained version.
+#### 🧠 Option 1: Run the Full Training NotebookTo view the complete end-to-end pipeline (data analysis → model training → evaluation):Bashjupyter notebook notebooks/Predicting BTS Power Consumption.ipynb
+This notebook:Performs data preprocessing and feature engineeringRuns multi-model GridSearchCV for hyperparameter optimizationConducts error analysisSaves the trained model automatically in the models/ directory⚡ Option 2: Use the Pre-Trained Model for PredictionsIf you prefer instant predictions, use the pre-trained model:Example Python Script
+
+```python
+import joblib
 import pandas as pd
 
 # Load the pre-trained model
