@@ -75,7 +75,7 @@ import joblib
 import pandas as pd
 
 # Load the pre-trained model
-loaded_model = joblib.load('models/bts_champion_model.joblib')
+loaded_model = joblib.load('models/bts_model.joblib')
 
 # Create new input data
 input_data = {
